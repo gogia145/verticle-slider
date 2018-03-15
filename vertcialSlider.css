@@ -1,0 +1,25 @@
+@charset "utf-8";
+/* CSS Document */
+.marquee {
+	border:#CCC thin solid;
+  	height: 350px;
+  	width: 300px;
+  	overflow: hidden;
+  	position: relative;
+}
+
+.marquee div {
+	display:inline-block;
+	position: absolute;
+	overflow: hidden;
+	animation: marquee 20s linear infinite;
+}
+
+.marquee div span img{
+	margin:0px 25px;
+}
+
+@keyframes marquee {
+  	0% { top: 150px; }
+  	100% { top: -1200px; }
+}
